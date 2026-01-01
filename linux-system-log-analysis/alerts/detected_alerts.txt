@@ -1,0 +1,21 @@
+ALERT: SSH Brute Force Detected
+SEVERITY: Medium
+
+SOURCE IP:
+- 192.168.1.50
+
+TARGETED USER:
+- admin (invalid account)
+
+SUMMARY:
+Multiple failed SSH authentication attempts detected within a short time window.
+Pattern indicates automated brute-force activity.
+
+ACTION TAKEN:
+- Incident documented
+- Monitoring recommended
+
+RECOMMENDED NEXT STEPS:
+- Block offending IP
+- Enable intrusion prevention (fail2ban)
+- Audit SSH access logs
